@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:id="@+id/exoplayer_layer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<com.google.android.exoplayer2.ui.SimpleExoPlayerView
+			android:id="@+id/exoplayer"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			/>
+
+		<TextView
+			android:id="@+id/tv_video_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/exoplayer"
+			android:layout_marginTop="8dp"
+			android:ellipsize="end"
+			android:gravity="center_vertical"
+			android:maxLines="1"
+			android:paddingStart="8dp"
+			android:paddingEnd="8dp"
+			android:textColor="#000"
+			android:textSize="16sp"
+			tools:text="video Title"/>
+
+		<TextView
+			android:id="@+id/tv_video_des"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/tv_video_title"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="12dp"
+			android:maxLines="1"
+			android:paddingStart="8dp"
+			android:paddingEnd="8dp"
+			android:textColor="#6A6868"
+			android:textSize="12sp"
+			android:visibility="visible"
+			tools:text="Video des"/>
+	</RelativeLayout>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/mRecyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginBottom="8dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/exoplayer_layer"/>
+
+</android.support.constraint.ConstraintLayout>

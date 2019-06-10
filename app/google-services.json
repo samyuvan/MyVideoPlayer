@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1087112351214",
+    "firebase_url": "https://videoplayer-8d1a1.firebaseio.com",
+    "project_id": "videoplayer-8d1a1",
+    "storage_bucket": "videoplayer-8d1a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087112351214:android:d48c0650b0baba1e",
+        "android_client_info": {
+          "package_name": "com.example.prassanna.myvideoplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087112351214-g5nosc5u11ark3lcee9baq4hi3vr775e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prassanna.myvideoplayer",
+            "certificate_hash": "9b6f26fefa1fc2ed33b164f6a1c7e5aa844e6860"
+          }
+        },
+        {
+          "client_id": "1087112351214-1ci7p3pshnn59494j0c2b86rlhdd623e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdsRRkWy4DQ2UsB8tdSDY6Un3TXNMEelg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087112351214-1ci7p3pshnn59494j0c2b86rlhdd623e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

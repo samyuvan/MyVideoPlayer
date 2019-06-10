@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="12dp"
+	android:background="#FFF">
+
+	<com.example.prassanna.myvideoplayer.AutoScaleImageView
+		android:id="@+id/adapter_video_banner_image"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scaleType="fitXY"
+		android:src="@drawable/img_video"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"/>
+
+	<TextView
+		android:id="@+id/adapter_video_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:ellipsize="end"
+		android:gravity="center_vertical"
+		android:maxLines="1"
+		android:paddingStart="8dp"
+		android:paddingEnd="8dp"
+		android:textColor="#000"
+		android:textSize="18sp"
+		app:layout_constraintTop_toBottomOf="@+id/adapter_video_banner_image"
+		tools:text="Seramal Ponal"/>
+
+	<TextView
+		android:id="@+id/adapter_sub_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		android:fontFamily="sans-serif-light"
+		android:maxLines="1"
+		android:paddingStart="8dp"
+		android:paddingEnd="8dp"
+		android:textColor="#6A6868"
+		android:textSize="12dp"
+		android:visibility="visible"
+		app:layout_constraintTop_toBottomOf="@+id/adapter_video_title"
+		tools:text="Seramal Ponal"/>
+
+	<TextView
+		android:id="@+id/adapter_label_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		android:maxLines="1"
+		android:paddingStart="8dp"
+		android:paddingEnd="8dp"
+		android:textColor="#6A6868"
+		android:textSize="12dp"
+		android:visibility="gone"
+		app:layout_constraintTop_toBottomOf="@+id/adapter_sub_title"/>
+
+</android.support.constraint.ConstraintLayout>
+
